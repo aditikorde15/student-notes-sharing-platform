@@ -1,4 +1,4 @@
-import Vision from "./pages/Vision";
+import Vision from "./pages/VisionTest";
 import AI from "./pages/AI";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -15,8 +15,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/ai" element={<AI />} />
-      <Route path="/vision"element={<Vision />} />
-
+      <Rout path="/vision" element={<Vision />} />
       <Route
         path="/notes"
         element={
