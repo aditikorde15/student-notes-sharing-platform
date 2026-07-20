@@ -37,4 +37,3 @@ element={
 }
 
 export default App;
-he bg
