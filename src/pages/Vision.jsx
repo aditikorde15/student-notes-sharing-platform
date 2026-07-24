@@ -14,10 +14,17 @@ function Vision() {
     const reader = new FileReader();
 
     reader.onloadend = async () => {
+      try {
+
       const base64 = reader.result;
 
       const response = await askVision(base64);
       setResult(response);
+    } catch (error){
+      console.error(error);
+      alert(error.message);
+      setResult("Error:" + error.message);
+    }
     };
 
     reader.readAsDataURL(image);
