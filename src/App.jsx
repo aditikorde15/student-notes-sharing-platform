@@ -1,4 +1,4 @@
-import Vision from "./pages/Vision.jsx";
+import Vision from "./pages/Vision";
 import AI from "./pages/AI";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
