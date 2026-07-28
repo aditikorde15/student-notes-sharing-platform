@@ -27,10 +27,14 @@ function Notes() {
   }
 
   async function addNote() {
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
     const { error } = await supabase.from("Student_notes").insert([
       {
         title,
         description,
+        user_id: user.id,
       },
     ]);
 
