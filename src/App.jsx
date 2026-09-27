@@ -7,6 +7,7 @@ import Signup from "./pages/Signup";
 import Notes from "./pages/Notes";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./ProtectedRoute";
+import ResetPassword from "./pages/ResetPassword";
 
 function App() {
 return (
@@ -16,6 +17,7 @@ return (
 <Route path="/signup" element={<Signup />} />
 <Route path="/ai" element={<AI />} />
 <Route path="/vision" element={<Vision />} />
+<Route path="/reset-password" element={<ResetPassword />} />
 <Route
 path="/notes"
 element={
